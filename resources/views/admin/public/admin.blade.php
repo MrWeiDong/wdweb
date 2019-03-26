@@ -290,8 +290,8 @@
                                     </a>
                                 </dd>
                                 <dd class="">
-                                    <a href="javascript:;" _href="./sys-data.html">
-                                        <cite>数字字典</cite>
+                                    <a href="javascript:;" _href="/admin/meun">
+                                        <cite>菜单管理</cite>
                                     </a>
                                 </dd>
                                 <dd class="">
