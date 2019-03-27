@@ -14,4 +14,14 @@
 require 'home.php';
 
 
-require 'admin.php';
+//后台登录
+Route::get('admin/login','Admin\LoginController@index');
+
+Route::group(['namespace'=>'Admin','prefix'=>'admin'],function(){
+	
+	Route::get('/','IndexController@index');
+	
+	Route::get('meun','MeunController@index');
+	
+	Route::match(['get','post'],'meun/add','MeunController@edit');
+});

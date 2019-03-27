@@ -310,7 +310,6 @@ body .layui-layer-dir .layui-layer-content{padding: 10px; max-height: 280px; ove
 body .layui-layout-admin .site-demo{bottom: 82px; padding: 0;height: 100%}
 .layui-tab-item{
 	height: 100%;
-	overflow-y: scroll;
 }
 .x-iframe{
 	width: 100%;
@@ -384,7 +383,20 @@ body .site-demo-nav .layui-nav-item{line-height: 40px}
 .site-demo-body .layui-elem-quote a{color: #01AAED;}
 .site-demo-body .layui-elem-quote a:hover{color: #FF5722;}
 
-
+.x-so{
+    /*text-align: center;*/
+    /*background: #f2f2f2 url() 0 0 no-repeat;*/
+    margin-bottom: 20px;
+}
+.x-so input.layui-input{
+    width: 150px;
+}
+.x-so .layui-form-label{
+    display: inline-block;
+}
+.x-so input.layui-input,.x-so input.layui-btn{
+    display: inline-block;
+}
 /* 其它 */
 #trans-tooltip,
 #tip-arrow-bottom,

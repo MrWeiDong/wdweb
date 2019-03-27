@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>
-            X-admin v1.0
-        </title>
-        <meta name="renderer" content="webkit">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="format-detection" content="telephone=no">
-        <link rel="stylesheet" href="/adminStyle/css/x-admin.css" media="all">
-    </head>
+		<meta charset="utf-8">
+		<title>
+			X-admin v1.0
+		</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="/adminStyle/css/x-admin.css" media="all">
+		<script src="/adminStyle/lib/layui/layui.js" charset="utf-8"></script>
+		<script src="/adminStyle/js/x-admin.js"></script>
+	</head>
     <body>
         <div class="layui-layout layui-layout-admin">
             <div class="layui-header header header-demo">
@@ -22,7 +24,7 @@
                         X-admin v1.0
                     </a>
                     <ul class="layui-nav" lay-filter="">
-                      <li class="layui-nav-item"><img src="./images/logo.png" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
+                      <li class="layui-nav-item"><img src="/adminStyle/images/logo.png" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
                       <li class="layui-nav-item">
                         <a href="javascript:;">admin</a>
                         <dl class="layui-nav-child"> <!-- 二级菜单 -->
@@ -289,9 +291,14 @@
                                         <cite>系统设置</cite>
                                     </a>
                                 </dd>
-                                <dd class="">
+								<dd class="">
                                     <a href="javascript:;" _href="/admin/meun">
                                         <cite>菜单管理</cite>
+                                    </a>
+                                </dd>
+                                <dd class="">
+                                    <a href="javascript:;" _href="./sys-data.html">
+                                        <cite>数字字典</cite>
                                     </a>
                                 </dd>
                                 <dd class="">
@@ -332,14 +339,22 @@
                 </ul>
                 <div class="layui-tab-content site-demo site-demo-body">
                     <div class="layui-tab-item layui-show">
-                        @yield('main')
+                        <iframe frameborder="0" src="./welcome.html" class="x-iframe"></iframe>
                     </div>
                 </div>
             </div>
             <div class="site-mobile-shade">
             </div>
         </div>
-        <script src="/adminStyle/lib/layui/layui.js" charset="utf-8"></script>
-        <script src="/adminStyle/js/x-admin.js"></script>
+        
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
     </body>
 </html>
