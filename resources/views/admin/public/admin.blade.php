@@ -12,6 +12,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="/layui/css/layui.css" media="all">
 		<link rel="stylesheet" href="/adminStyle/css/x-admin.css" media="all">
 		<script src="/adminStyle/lib/layui/layui.js" charset="utf-8"></script>
 		<script src="/adminStyle/js/x-admin.js"></script>
@@ -47,7 +48,7 @@
                     <ul class="layui-nav layui-nav-tree site-demo-nav" lay-filter="side">
                         <li class="layui-nav-item">
                             <a class="javascript:;" href="javascript:;">
-                                <i class="layui-icon" style="top: 3px;">&#xe607;</i><cite>问题管理</cite>
+                                <i class="layui-icon" style="top: 3px;">&#xe677;</i><cite>问题管理</cite>
                             </a>
                             <dl class="layui-nav-child">
                                 <dd class="">

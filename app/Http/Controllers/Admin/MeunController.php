@@ -9,6 +9,8 @@ use App\Http\Controllers\Admin\ClassAllow\Allow;
 
 use App\Models\Meun as MeunModel;
 
+use App\models\Icon as IconModel;
+
 class MeunController extends Allow{
 	
 	function __construct(){
@@ -30,7 +32,11 @@ class MeunController extends Allow{
 		if($request->isMethod('post')){
 		
 		}else{
-			return view('admin.meun.add');
+			$icon = IconModel::all()->toArray();
+			$data = [
+				'icon' => $icon	
+			];
+			return view('admin.meun.add')->with($data);
 		}
 	}
 	

@@ -13,7 +13,7 @@
       </div>
       <xblock>
         <button class="layui-btn layui-btn-danger" onclick="delAll(4)"><i class="layui-icon"></i>批量删除</button>
-		<a class="layui-btn" onclick="x_admin_show('添加','/admin/meun/add',600,400)" ><i class="layui-icon"></i>顶级菜单</a>
+		<a class="layui-btn" onclick="x_admin_show('添加','/admin/meun/add',800,600)" ><i class="layui-icon"></i>顶级菜单</a>
         <span class="x-right" style="line-height:40px">共有数据：88 条</span>
       </xblock>
       <table class="layui-table layui-form">
